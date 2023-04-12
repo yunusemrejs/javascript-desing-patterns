@@ -10,29 +10,10 @@ Builder deseninin en önemli avantajı, nesnelerin yapısının değişebilirli�
 
 **Builder tasarım deseni, genellikle aşağıdaki durumlarda kullanılması önerilir:**
 
- - Nesne yapısının birden fazla varyasyonu varsa: Eğer nesnenin
-   yapısında birden fazla varyasyon varsa (örneğin, ürünlerde farklı
-   boyutlar, renkler, vs.), Builder deseni kullanarak nesnelerin farklı
-   varyasyonlarını oluşturmak ve yapılandırmak kolaylaştırılabilir.
-   
-   
- - Nesnenin yapısı karmaşıksa: Nesne yapısı çok karmaşık veya çok   
-   detaylıysa, nesneyi oluşturmak için kullanılacak kodun okunması ve   
-   bakımı zor olabilir. Builder deseni, nesnenin yapısını adım adım   
-   belirleyerek, oluşturma işlemini basitleştirir ve kodun   
-   okunabilirliğini arttırır.
+ - Nesne yapısının birden fazla varyasyonu varsa: Eğer nesnenin yapısında birden fazla varyasyon varsa (örneğin, ürünlerde farklı boyutlar, renkler, vs.), Builder deseni kullanarak nesnelerin farklı varyasyonlarını oluşturmak ve yapılandırmak kolaylaştırılabilir.
+    
+ - Nesnenin yapısı karmaşıksa: Nesne yapısı çok karmaşık veya çok detaylıysa, nesneyi oluşturmak için kullanılacak kodun okunması ve bakımı zor olabilir. Builder deseni, nesnenin yapısını adım adım belirleyerek, oluşturma işlemini basitleştirir ve kodun okunabilirliğini arttırır.
 
-   
+ - Nesnenin yapılandırılması özelleştirilebilir olmalı: Eğer nesnenin yapısını özelleştirmek ve farklı varyasyonları oluşturmak gerekiyorsa, Builder deseni kullanarak nesne yapısını kolayca özelleştirmek ve yapılandırmak mümkün olabilir.
 
- - Nesnenin yapılandırılması özelleştirilebilir olmalı: Eğer nesnenin   
-   yapısını özelleştirmek ve farklı varyasyonları oluşturmak   
-   gerekiyorsa, Builder deseni kullanarak nesne yapısını kolayca   
-   özelleştirmek ve yapılandırmak mümkün olabilir.
-
-   
-
- - Kod tekrarını önlemek istiyorsanız: Builder deseni, kod tekrarını   
-   önlemeye yardımcı olur. Çünkü nesnelerin yapısını oluşturmak için   
-   aynı kod blokları birden fazla kez kullanılmak yerine, bu blokların  
-   bir builder sınıfında toplanarak, nesnelerin yapısı kolayca   
-   oluşturulabilir.
+ - Kod tekrarını önlemek istiyorsanız: Builder deseni, kod tekrarını önlemeye yardımcı olur. Çünkü nesnelerin yapısını oluşturmak için aynı kod blokları birden fazla kez kullanılmak yerine, bu blokların bir builder sınıfında toplanarak, nesnelerin yapısı kolayca oluşturulabilir.
