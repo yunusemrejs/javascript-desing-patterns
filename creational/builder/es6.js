@@ -35,5 +35,27 @@ class PizzaBuilder {
 	}
 }
 
-const pizza = new PizzaBuilder('large').setCrust('thin').setSauce('tomato').addTopping('cheese').addTopping('mushrooms').build();
-console.log(pizza);
+class PizzaDirector {
+	constructor(builder) {
+		this.builder = builder;
+	}
+
+	buildMargherita() {
+		return this.builder.setCrust('thin').setSauce('tomato').addTopping('cheese').build();
+	}
+
+	buildPepperoni() {
+		return this.builder.setCrust('thick').setSauce('tomato').addTopping('cheese').addTopping('pepperoni').build();
+	}
+
+	buildVegetarian() {
+		return this.builder.setCrust('thick').setSauce('pesto').addTopping('cheese').addTopping('mushrooms').addTopping('olives').build();
+	}
+}
+
+
+const builder = new PizzaBuilder('large');
+const director = new PizzaDirector(builder);
+
+const margherita = director.buildMargherita();
+console.log(margherita);
