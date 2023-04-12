@@ -1,5 +1,7 @@
-Remote Facade tasarım deseni, uzak bir sunucu veya servis üzerindeki karmaşık işlemleri veya verileri basitleştirmek için kullanılır. Bu tasarım deseni, müşteri kodunun uzak sunucularla etkileşimini soyutlar ve müşteri kodunun sadece yerel bir nesneyi kullanması gerektiği gibi bir arayüz sağlar.
+Remote Facade tasarım deseni, yazılım uygulamalarında kullanılan bir yapısal desendir. Bu desen, bir uygulamanın farklı bileşenleri arasındaki iletişim karmaşıklığını azaltmayı hedefler.
 
-Bu tasarım deseni, müşteri kodunun uzak sunuculara veya servislere doğrudan erişememesi gerektiği durumlarda kullanışlıdır. Örneğin, bir web uygulaması geliştiriyorsanız ve uygulamanızın müşteri verilerini saklamak için farklı sunucular veya servisler kullanması gerekiyorsa, Remote Facade tasarım desenini kullanabilirsiniz. Bu tasarım deseni, müşteri kodunun farklı sunuculara veya servislere doğrudan erişmesini önleyerek, kodu daha sade ve anlaşılır hale getirir ve bakımı kolaylaştırır.
+Bu desen, istemci (client) ve sunucu (server) arasında bir arayüz sağlar. İstemci, sunucudaki bir nesneye erişmek istediğinde, bu arayüzü kullanarak sunucu ile iletişim kurar. Sunucuda bulunan nesneler, istemcinin ihtiyacına göre özel olarak tasarlanmış bir arabirim (interface) aracılığıyla sunulur. Bu arabirim, istemcinin nesnelerle etkileşim kurabilmesi için gerekli olan yöntemleri ve özellikleri içerir.
 
-Ayrıca, Remote Facade tasarım deseni, uzak sunucuların veya servislerin birleştirilmesi veya yükseltilmesi gerektiği durumlarda da kullanışlıdır. Bu tasarım deseni, müşteri kodunun bu değişikliklerden etkilenmemesini sağlar ve değişiklikleri yalnızca Remote Facade sınıfında yapmanızı sağlar. Bu şekilde, müşteri kodunun yeniden derlenmesi veya güncellenmesi gerekmez.
+Remote Facade deseni, birçok farklı bileşeni tek bir arayüzde birleştirerek, istemci ve sunucu arasındaki iletişimdeki karmaşıklığı azaltır. Böylece, istemci tarafında yapılan değişiklikler, sunucudaki nesnelere erişimi etkilemez ve böylece sistem daha modüler hale gelir.
+
+Özetle, Remote Facade deseni, istemci ve sunucu arasındaki iletişim karmaşıklığını azaltan, modüler bir yapısal desendir.
