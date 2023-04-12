@@ -1,0 +1,3 @@
+Facade tasarım deseni, bir uygulamanın farklı bileşenleri arasında bir arayüz (interface) sağlar. Bu arayüz, uygulamanın kullanıcıları veya diğer bileşenleri tarafından kullanılabilen basit bir arayüzdür. Bu arayüz, karmaşık bir alt sisteme erişmek için gerekli olan detayları gizleyerek, kullanıcılara veya diğer bileşenlere kolaylık sağlar.
+
+Facade deseni, özellikle büyük ve karmaşık uygulamalarda kullanıldığında oldukça faydalıdır. Bu desen, alt sistemler arasındaki bağımlılıkları en aza indirerek, uygulamanın daha modüler ve esnek olmasını sağlar. Ayrıca, uygulamanın sadece belirli bir bölümünde yapılan değişikliklerin, diğer bölümleri etkilemesini önler.
