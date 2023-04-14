@@ -1,4 +1,4 @@
-#**Factory Tasarım Deseni**
+## **Factory Tasarım Deseni**
 
 Factory tasarım deseni, nesne yaratma işlemlerini kapsülleyen ve istemcilerin nesneleri doğrudan oluşturmak yerine bir fabrika aracılığıyla oluşturmalarına olanak tanıyan bir yaratımsal tasarım desenidir. Bu desen, kodun daha esnek, sürdürülebilir ve değiştirilebilir olmasını sağlar.
 
